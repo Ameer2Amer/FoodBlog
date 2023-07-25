@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		
+* {
+      margin: 0;
+      padding: 0;
+    }
+
+body, html {
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+      color: #222;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .logo  {
+      font-family: sans-serif;
+      font-size: 30px;
+      text-decoration: none;
+      color: #333;
+      margin-left: 50px;
+      margin-top: 3px;
+    }
+  
+    .sidenav {
+      height: 50%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #222;
+      display: block;
+      transition: 0.3s;
+      font-family: sans-serif;
+    }
+    
+    .sidenav a:hover {
+      color: #A1BB22;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    span{
+      position: fixed;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    h1 {
+            text-align: center;
+            margin-bottom: 60px;
+            color: #cca781;
+            font-family: "MV Boli", sans-serif;
+            font-size: 50px;
+        }
+
+    .about-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            justify-content: space-between;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .about-info p{
+          margin-top: 40px;
+          justify-content:space-between;
+        }
+ 
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #777;
+  margin-top: 200px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 5px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer-section ul li i {
+  margin-right: 5px;
+  color: #777;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.social-icons a:hover{
+  color: #A1BB22;
+}
+
+.newsletter-form input[type="email"] {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.newsletter-form button {
+  padding: 5px 10px;
+  background-color: #A1BB22;
+  color: #fff;
+  border: none;
+}
+
+.newsletter-form button:hover{
+  background-color: green;
+}
+
+.footer-bottom {
+  border-top: 1px solid #A1BB22;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+	</style>
+</head>
+<body>
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="HT1.html#home">Home</a>
+          <a href="HT1.html#categories">Categories</a>
+          <a href="HT4.html">About Me</a>
+          <a href="HT1.html#recipes">Leastes Recipes</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#subscribe">Subscribe</a>
+    </div>
+    <span style= "font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+      <nav>
+        <div class="logo">
+          <p>Logo</p>
+        </div>
+</div>  
+</nav>
+  </header>
+  <body>
+  <h1>About Me</h1>
+
+  <div class="about-info">
+      <img src="img\Profile-Place-Holder.png" alt="Personal Photo" class="profile-photo">
+      <div>
+          <h2>Your Name</h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum justo ac turpis pellentesque,
+              eget volutpat dolor consectetur. Proin nec leo ipsum. In in turpis ut mauris vulputate tincidunt.
+              Integer tempor est eu turpis ultrices, id laoreet ex commodo. Nunc quis nulla eu justo congue
+              facilisis. Curabitur non sem vel nulla finibus venenatis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum justo ac turpis pellentesque,
+              eget volutpat dolor consectetur. Proin nec leo ipsum. In in turpis ut mauris vulputate tincidunt.
+              Integer tempor est eu turpis ultrices, id laoreet ex commodo. Nunc quis nulla eu justo congue
+              facilisis. Curabitur non sem vel nulla finibus venenatis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum justo ac turpis pellentesque,
+              eget volutpat dolor consectetur. Proin nec leo ipsum. In in turpis ut mauris vulputate tincidunt.
+              Integer tempor est eu turpis ultrices, id laoreet ex commodo. Nunc quis nulla eu justo congue
+              facilisis. Curabitur non sem vel nulla finibus venenatis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum justo ac turpis pellentesque,
+              eget volutpat dolor consectetur. Proin nec leo ipsum. In in turpis ut mauris vulputate tincidunt.
+              Integer tempor est eu turpis ultrices, id laoreet ex commodo. Nunc quis nulla eu justo congue
+              facilisis. Curabitur non sem vel nulla finibus venenatis.
+          </p>
+      </div>
+  </div>    
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3 id="about">About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tincidunt enim.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-section contact">
+      <h3 id="contact">Contact</h3>
+      <ul>
+        <li><i class="fas fa-envelope"></i> Email: info@example.com</li>
+      </ul>
+    </div>
+    <div class="footer-section newsletter">
+      <h3 id="subscribe">Subscribe to Our Newsletter</h3>
+      <form class="newsletter-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Food Blog. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js.js"></script>
+
+</body>
+</html>

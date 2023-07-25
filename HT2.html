@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+<style>
+
+* {
+      margin: 0;
+      padding: 0;
+    }
+
+body, html {
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+h1, h2 {
+  color: #222;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.recipe {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.recipe h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.recipe h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.recipe ul {
+  margin-top: 10px;
+}
+
+.recipe li {
+  margin-bottom: 5px;
+}
+
+header {
+  color: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo  {
+      font-family: sans-serif;
+      font-size: 30px;
+      text-decoration: none;
+      color: #333;
+      margin-left: 50px;
+    }
+
+
+.sidenav {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+
+.sidenav a:hover {
+  color: #A1BB22;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+span {
+  position: fixed;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #777;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 5px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer-section ul li i {
+  margin-right: 5px;
+  color: #777;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #222;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.social-icons a:hover{
+  color: #A1BB22;
+}
+
+.newsletter-form input[type="email"] {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.newsletter-form button {
+  padding: 5px 10px;
+  background-color: #A1BB22;
+  color: #fff;
+  border: none;
+}
+
+.newsletter-form button:hover{
+  background-color: green;
+}
+
+.footer-bottom {
+  border-top: 1px solid #A1BB22;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+
+</style>
+
+<title>Recipe</title>
+
+</head>
+
+<body>
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="HT1.html#home">Home</a>
+          <a href="HT1.html#categories">Categories</a>
+          <a href="HT4.html">About Me</a>
+          <a href="HT1.html#recipes">Leastes Recipes</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#subscribe">Subscribe</a>
+    </div>
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
+    
+    <nav>
+      <div class="logo">
+        <p>Logo</p>
+      </div>
+  </header>
+
+  <main>
+    <section class="recipe">
+      <h1>Recipe Title</h1>
+      <img src="img/33.jpeg" alt="Recipe Image">
+      <section>
+        <h2>Ingredients</h2>
+        <ul>
+          <li>Ingredient 1</li>
+          <li>Ingredient 2</li>
+          <li>Ingredient 3</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Instructions</h2>
+        <ol>
+          <li>Step 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Step 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          <li>Step 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+        </ol>
+      </section>
+      <section>
+        <p>Cooking Time: 30 minutes</p>
+        <p>Servings: 4</p>
+        <p>Notes: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Source: <a href="https://www.example.com">Example Recipe Website</a></p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 id="about">About</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel tincidunt enim.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3 id="contact">Contact</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> Email: info@example.com</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 id="subscribe">Subscribe to Our Newsletter</h3>
+        <form class="newsletter-form" action="#" method="post">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Food Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>     
+  
+</body>
+</html>
